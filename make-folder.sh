@@ -1,6 +1,6 @@
 mkdir $1
 cd $1
-touch 1
-touch 2
-touch 3
+for i in $(seq $2); do
+  touch $i
+done
 cd ..
